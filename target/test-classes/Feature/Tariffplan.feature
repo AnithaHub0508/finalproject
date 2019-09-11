@@ -1,28 +1,22 @@
 Feature: Add Tariff plans
 
   Scenario: 
-    #Given User should be in home page.
-    #And User click on add customer page.
-    #When User enter all tariff details.
-    #And User click on submit button.
-    #Then User should be displayed message is generated
-    
-    #Given User should be in home page.
-    #And User click on add customer page.
-    #When User enter all tariff details in field.
-     # | 200 | 100 | 40 | 700 | 567 | 780 | 20 |
-    #And User click on submit button.
-    #Then User should be displayed message is generated
-    
-    Given User should be in home page.
-    And User click on add customer page.
-    When User enter all tariff details in field now.
-      | Rent     | 200 |
-      | Mins     | 100 |
-      | Inter    |  40 |
-      | Sms      | 700 |
-      | Local    | 567 |
-      | National | 780 |
-      | Charge   |  20 |
-    And User click on submit button.
-    Then User should be displayed message is generated
+
+  #Given User is on home page
+  #And User click on add tariff plan
+  #When User enter the plan details
+  # | 300 | 400 | 90 | 100 | 20 | 10 | 1 |
+  #| 400 | 500 | 80 |  90 | 10 | 15 | 2 |
+  #| 800 | 700 | 60 |  80 | 30 | 16 | 3 |
+  #And User click the submit button
+  #Then User shold be received message
+  Scenario: 
+    Given User is on home page
+    And User click on add tariff plan
+    When User enter the plannn details.
+      | Rent | Mins | Inter | Sms | fee | National | Cost |
+      |  300 |  400 |    90 | 100 |  20 |       10 |    1 |
+      |  400 |  500 |    80 |  90 |  10 |       15 |    2 |
+      |  800 |  700 |    60 |  80 |  30 |       16 |    3 |
+    And User click the submit button
+    Then User shold be received message
