@@ -54,20 +54,16 @@ public class Customerdetails {
 		
 	    
 	}
-	@When("User enter all valid data")
-	public void user_enter_all_valid_data(DataTable cusdetl) {
-		Map<String, String> dats = cusdetl.asMap(String.class, String.class);
+	@When("User enter all valid data.{string},{string},{string},{string},{string}")
+	public void user_enter_all_valid_data(String fname, String lname, String email, String address, String phno) {
+		
 		driver.findElement(By.xpath("//label[@for='done']")).click();
-	    driver.findElement(By.id("fname")).sendKeys(dats.get("Fname"));
-	    driver.findElement(By.id("lname")).sendKeys(dats.get("Lname"));
-	    driver.findElement(By.id("email")).sendKeys(dats.get("Email"));
-	    driver.findElement(By.name("addr")).sendKeys(dats.get("Address"));
-	    driver.findElement(By.id("telephoneno")).sendKeys(dats.get("Phno"));
-
-	    
+	    driver.findElement(By.id("fname")).sendKeys(fname);
+	    driver.findElement(By.id("lname")).sendKeys(lname);
+	    driver.findElement(By.id("email")).sendKeys(email);
+	    driver.findElement(By.name("addr")).sendKeys(address);
+	    driver.findElement(By.id("telephoneno")).sendKeys(phno);
 	}
-
-
 
 
 	@When("User click on submit button")
