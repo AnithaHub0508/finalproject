@@ -1,5 +1,6 @@
 Feature: Add Tariff plans
 
+@smoke
   Scenario: 
 
  Given User is on home page

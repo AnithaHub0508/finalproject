@@ -13,6 +13,11 @@ public class Hook extends FunctionalLibrary   {
 		launch("http://demo.guru99.com/telecom");
 
 	}
+	@After
+	public void afterScenario() {
+		driver.quit();
+
+	}
 	
 
 	
