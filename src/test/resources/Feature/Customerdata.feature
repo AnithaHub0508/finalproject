@@ -1,4 +1,4 @@
-Feature: Add customer details @regression
+Feature: Add customer details 
 
   Background: 
     #Given User should be in home page

@@ -1,0 +1,102 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5811417200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on add customer page",
+            "match": {
+              "location": "Customer.user_click_on_add_customer_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23747474500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeBackground()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "",
+        "description": "",
+        "id": "add-customer-details;",
+        "after": [
+          {
+            "result": {
+              "duration": 809939000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4629522700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter all valid details",
+            "match": {
+              "location": "Customer.user_enter_all_valid_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2333295300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on submit button",
+            "match": {
+              "location": "Customer.user_click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 345479400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be displayed customer id is generated",
+            "match": {
+              "location": "Customer.user_should_be_displayed_customer_id_is_generated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add customer details",
+    "description": "",
+    "id": "add-customer-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/Customerdata.feature",
+    "tags": []
+  }
+]
